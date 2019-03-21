@@ -1,6 +1,6 @@
 import subprocess
 
-benches = ['ecs', 'specs', 'trex', 'calx_ecs', 'froggy', 'constellation']
+benches = ['gecs', 'specs', 'trex', 'calx_ecs', 'froggy', 'constellation']
 bench_targets = ['pos_vel', 'parallel']
 bench_names = ['build', 'update']
 
@@ -86,10 +86,10 @@ def graph(dataset, targets, names, benches, title):
         dat.write(formatted)
 
     # commands to send to `gnuplot`
-    args = "gnuplot -e \"data=\'./graph/{0}.dat';title=\'{0}\';columns={1}\" ./graph/graph.script > ./graph/{0}.png"
+    args = "gnuplot -e \"data=\'./graph/{0}.dat';title=\'{0}\';columns={1}\" ./graph/graph.script > ./graph/{0}.svg"
     subprocess.call(args.format(title, len(targets) * len(names)), stderr=subprocess.STDOUT, shell=True)
 
-graph(dataset, bench_targets, bench_names, benches, "all")
+graph(dataset, bench_targets, bench_names, benches, "Rust_ECS_performance_\(lower_is_better\)")
 graph(dataset, bench_targets, ["update"], benches, "update")
 graph(dataset, bench_targets, ["build"], benches, "build")
 
