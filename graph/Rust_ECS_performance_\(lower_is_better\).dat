@@ -1,7 +1,7 @@
  Rust_ECS_performance_\(lower_is_better\) pos_vel_build pos_vel_update parallel_build parallel_update
- gecs 1041 6 26 0 2711 79 150 2
- specs 380 8 5 0 722 9 50 2
- trex 1157 7 239 11 1536 30 430 28
- calx_ecs 506 11 19 0 852 10 72 2
- froggy 623 5 16 0 1639 28 66 8
- constellation 311 13 9 0 502 6 118 6
+ gecs 848 11 71 4 848 11 71 4
+ specs 393 3 5 0 698 18 49 4
+ trex 1153 27 237 16 1522 54 440 7
+ calx_ecs 504 9 19 0 848 11 71 4
+ froggy 611 13 12 0 1640 308 68 18
+ constellation 307 4 9 0 502 9 117 5

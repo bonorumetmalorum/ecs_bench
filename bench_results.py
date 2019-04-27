@@ -95,5 +95,4 @@ graph(dataset, bench_targets, ["build"], benches, "build")
 
 with open('README.md', 'w') as f:
     f.write(readme.encode('utf8'))
-
 print(out)
